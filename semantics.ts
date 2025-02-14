@@ -124,11 +124,6 @@ export function generateAllFrames() {
   const canonicals: number[] = [];
   const map = new Map<number, number>();
 
-  const stats = {
-    equivalentPerRelations: new Uint16Array(relation.length),
-  };
-  stats.equivalentPerRelations.fill(0);
-
   const total = 2 ** relation.length;
   for (let id = 0; id < total; id++) {
     if (map.has(id)) continue;
@@ -151,7 +146,6 @@ export function generateAllFrames() {
     for (const equivalentId of equivalentIds) {
       map.set(equivalentId, canonicalId);
     }
-    stats.equivalentPerRelations[relations.size]++;
   }
 
   const mapping: Uint16Array = new Uint16Array(total);
@@ -161,7 +155,7 @@ export function generateAllFrames() {
     mapping[id] = value;
   }
 
-  return { canonicals, mapping, stats };
+  return { canonicals, mapping };
 }
 
 const { canonicals, mapping } = generateAllFrames();
