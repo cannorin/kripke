@@ -18,7 +18,8 @@ This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) 
 
 ## Rules
 
-* A Kripke frame with 4 worlds are generated,
+* A Kripke frame with 4 worlds is generated.
+* The game tells you how many accessibility relations are in the frame, but *not* the exact shape of it.
 * You have a total of 10 moves. In each move you can do one of the following:
     - Enter a modal formula.
       - The game tells you in how many worlds the formula is valid (for every valuation).
