@@ -29,7 +29,6 @@ This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) 
 
 A typical gameplay looks like this:
 ```
-Run !help for available commands.
 A new Kripke frame is created! It has 4 worlds and 4 relations.
 [10] Lp -> p
 valid in 1 worlds, invalid in the rest.
@@ -56,6 +55,37 @@ a ==> a
 a ==> c
 b ==> d
 c ==> a
+```
+
+A professional gameplay:
+```
+A new Kripke frame is created! It has 4 worlds and 11 relations.
+[10] ~L0
+valid!
+[9] Lp -> p
+valid!
+[8] LLp -> Lp
+valid!
+[7] L(L(p -> Lp) -> p) -> p
+valid in 1 worlds, invalid in the rest.
+[6] (L(L(p -> Lp) -> p) -> p) & (Lp v L(p -> q))
+valid in 1 worlds, invalid in the rest.
+[5] M((L(L(p -> Lp) -> p) -> p) & (Lp v L(p -> q)))
+valid!
+[4] !guess aRa, aRb, aRc, aRd, bRa, bRb, bRc, cRc, dRa, dRc, dRd
+correct! congratulations!!
+id: 36287
+a ==> a
+a ==> b
+a ==> c
+a ==> d
+b ==> a
+b ==> b
+b ==> d
+c ==> a
+c ==> c
+c ==> d
+d ==> d
 ```
 
 ## Syntax
