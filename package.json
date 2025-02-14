@@ -1,0 +1,19 @@
+{
+  "name": "kripke",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "lint": "biome check",
+    "fix": "biome check --fix"
+  },
+  "type": "module",
+  "dependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript-parsec": "^0.3.4"
+  }
+}
