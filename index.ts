@@ -73,7 +73,7 @@ rl.on("line", (line) => {
     const expr = input.replace("!guess", "").trim();
     try {
       if (guess(expr)) {
-        console.log("correct! congratuations!!");
+        console.log("correct! congratulations!!");
         show();
         reset();
       } else {

@@ -50,7 +50,7 @@ incorrect.
 [2] !guess aRa, bRc, dRa, dRc
 incorrect.
 [1] !guess aRa, bRc, dRa, aRd
-correct! congratuations!!
+correct! congratulations!!
 id: 389
 a ==> a
 a ==> c
