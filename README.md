@@ -1,5 +1,7 @@
 # KRIPKE
 
+## [PLAY ON YOUR BROWSER NOW!](https://www.cannorin.net/kripke)
+
 ## Setup
 
 To install dependencies:
